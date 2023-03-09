@@ -29,10 +29,4 @@ data "aws_route" "route" {
 }
 
 data "aws_network_interface" "interface" {
-  id = data.aws_route.route.network_interface_id
-}
--
--
--
-data "aws_nat_gateway" "default" {
-  subnet_id = aws_subnet.public.id
+  id = data.aws_route.route.network_interface_
